@@ -71,6 +71,8 @@ class IntegerHandler(object):
 
     def decode_body(self, raw, object_length):
         """Unpack the encoded number appropriately for the object length."""
+        if object_length > 3:
+            return int.from_bytes(raw, "big")
         return unpack(self.formats[object_length], raw)[0]
 
 

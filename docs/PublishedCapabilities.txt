@@ -146,15 +146,27 @@ attachToPid:eventsMask: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo'
 ['isEqual:', 'initWithChannel:', 'messageReceived:', 'valueForKey:', 'addObserver:', 'performSelector:', 'performSelector:withObject:', 'isKindOfClass:', 'isMemberOfClass:', 'conformsToProtocol:', 'respondsToSelector:', 'startCollectionWithPid:', 'attachToPid:eventsMask:']
 
 com.apple.instruments.server.services.deviceinfo
-nameForUID: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x14f2f0bb0> nameForUID:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-nameForGID: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x14f2f0bb0> nameForGID:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-execnameForPid: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x14f2f0bb0> execnameForPid:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-isRunningPid: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x14f2f0bb0> isRunningPid:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-enableExpiredPidTracking: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x14f2f0bb0> enableExpiredPidTracking:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-directoryListingForPath: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x14f2f0bb0> directoryListingForPath:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-iconDescriptionFileForAppPath: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x14f2f0bb0> iconDescriptionFileForAppPath:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-string indices must be integers hasFailed:
-['isEqual:', 'initWithChannel:', 'messageReceived:', 'valueForKey:', 'addObserver:', 'performSelector:', 'performSelector:withObject:', 'isKindOfClass:', 'isMemberOfClass:', 'conformsToProtocol:', 'respondsToSelector:', 'iconDescriptionForIconPath:', '_lookupInt32Sysctl:', '_lookupInt64Sysctl:', 'lookupSysctl:', 'nameForUID:', 'nameForGID:', 'execnameForPid:', 'isRunningPid:', 'enableExpiredPidTracking:', 'directoryListingForPath:', 'iconDescriptionFileForAppPath:']
+machTimeInfo
+runningProcesses
+nameForUID: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x15131c350> nameForUID:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+nameForGID: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x15131c350> nameForGID:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+execnameForPid: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x15131c350> execnameForPid:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+isRunningPid: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x15131c350> isRunningPid:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+machKernelName
+enableExpiredPidTracking: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x15131c350> enableExpiredPidTracking:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+directoryListingForPath: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x15131c350> directoryListingForPath:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+iconDescriptionFileForAppPath: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTDeviceInfoService: 0x15131c350> iconDescriptionFileForAppPath:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+hardwareInformation
+systemInformation
+networkInformation
+<instrument.dtxlib.DTXMessage object at 0x110347090>
+traceCodesFile
+kpepDatabase
+sysmonProcessAttributes
+sysmonSystemAttributes
+sysmonCoalitionAttributes
+stringByDeletingPathExtension
+['init', 'copy', 'dealloc', '.cxx_destruct', 'isEqual:', 'initWithChannel:', 'channel', 'messageReceived:', 'valueForKey:', 'mutableCopy', 'addObserver:', 'class', 'self', 'performSelector:', 'performSelector:withObject:', 'isProxy', 'isKindOfClass:', 'isMemberOfClass:', 'conformsToProtocol:', 'respondsToSelector:', 'retain', 'release', 'autorelease', 'retainCount', 'zone', 'hash', 'superclass', 'description', 'debugDescription', '_configurationProperties', 'iconDescriptionForIconPath:', 'numberOfPhysicalCpus', 'numberOfCpus', 'speedOfCpus', 'hwCPUtype', 'hwCPUsubtype', 'hwCPU64BitCapable', '_lookupInt32Sysctl:', '_lookupInt64Sysctl:', '_getIOMFBProperties', 'lookupSysctl:', 'productVersion', 'uniqueID', 'machTimeInfo', 'runningProcesses', 'nameForUID:', 'nameForGID:', 'execnameForPid:', 'isRunningPid:', 'machKernelName', 'enableExpiredPidTracking:', 'directoryListingForPath:', 'iconDescriptionFileForAppPath:', 'hardwareInformation', 'systemInformation', 'networkInformation', 'traceCodesFile', 'kpepDatabase', 'sysmonProcessAttributes', 'sysmonSystemAttributes', 'sysmonCoalitionAttributes', 'stringByDeletingPathExtension']
 
 com.apple.instruments.server.services.coreprofilesessiontap.pmi
 setConfig: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTTapService: 0x14de56d90> setConfig:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
@@ -458,11 +470,15 @@ com.apple.private.DTXConnection
 [DROP] _channelCanceled: 0
 
 com.apple.instruments.server.services.graphics.opengl
-setSamplingRate: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x15131e900> setSamplingRate:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-startSamplingAtTimeInterval: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x15131e900> startSamplingAtTimeInterval:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-valueForSwitch: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x15131e900> valueForSwitch:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
-setValue:forSwitchName: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x15131e900> setValue:forSwitchName:] - too few arguments (0 provided, 2 expected)'}, 'code': 1}
-['isEqual:', 'initWithChannel:', 'messageReceived:', 'valueForKey:', 'addObserver:', 'performSelector:', 'performSelector:withObject:', 'isKindOfClass:', 'isMemberOfClass:', 'conformsToProtocol:', 'respondsToSelector:', 'setSamplingRate:', 'currentFramesPerSecond:', 'startSamplingAtTimeInterval:', 'valueForSwitch:', 'setValue:forSwitchName:']
+setSamplingRate: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x13df0a040> setSamplingRate:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+stopSampling None
+startSamplingAtTimeInterval: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x13df0a040> startSamplingAtTimeInterval:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+cleanup None
+availableStatistics {'global': ['Alloc system memory', 'Allocated PB Size', 'Device Utilization %', 'In use system memory', 'IOGLBundleName', 'recoveryCount', 'Renderer Utilization %', 'SplitSceneCount', 'TiledSceneBytes', 'Tiler Utilization %', 'CoreAnimationFramesPerSecond'], 'process': []}
+driverNames
+valueForSwitch: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x13df0a040> valueForSwitch:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
+setValue:forSwitchName: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTGraphicsService: 0x13df0a040> setValue:forSwitchName:] - too few arguments (0 provided, 2 expected)'}, 'code': 1}
+['init', 'copy', 'dealloc', '.cxx_destruct', 'isEqual:', 'initWithChannel:', 'channel', 'messageReceived:', 'valueForKey:', 'mutableCopy', 'addObserver:', 'class', 'self', 'performSelector:', 'performSelector:withObject:', 'isProxy', 'isKindOfClass:', 'isMemberOfClass:', 'conformsToProtocol:', 'respondsToSelector:', 'retain', 'release', 'autorelease', 'retainCount', 'zone', 'hash', 'superclass', 'description', 'debugDescription', 'setSamplingRate:', 'stopSampling', '_releaseIOServices', '_setupIOServices', 'queryGlobalStatistics', 'queryCards', '_collectData', 'queryPidStatistics', 'currentFramesPerSecond:', '_collectSampleForService', 'startSamplingAtTimeInterval:', 'cleanup', 'availableStatistics', 'driverNames', 'valueForSwitch:', 'setValue:forSwitchName:', 'channel', 'hash', 'superclass', 'description', 'debugDescription', 'class', 'copy', 'self']
 
 com.apple.instruments.server.services.vmtracking.immediate
 configureLaunchEnvironment: {'$class': 'NSError', 'domain': 'DTXMessage', 'userinfo': {'NSLocalizedDescription': 'Unable to invoke -[<DTVMTrackingService: 0x14de4aed0> configureLaunchEnvironment:] - too few arguments (0 provided, 1 expected)'}, 'code': 1}
