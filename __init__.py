@@ -1,3 +1,10 @@
-import logging
-logging.basicConfig(format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s',
-                    level=logging.DEBUG)
+
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import os
+path = os.path.dirname(sys.modules[__name__].__file__)
+sys.path.insert(0, path)
+from .core import main

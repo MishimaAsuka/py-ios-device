@@ -223,5 +223,7 @@ def write_home_file(foldername: str, filename: str, data: bytes) -> str:
 def _get_lockdown_dir():
     if sys.platform == 'win32':
         return Path(os.environ['ALLUSERSPROFILE'] + '/Apple/Lockdown/')
-    else:
+    elif sys.platform == "darwin":
         return Path('/var/db/lockdown/')
+    elif sys.platform == "linux":
+        return Path('/var/lib/lockdown/')

@@ -145,10 +145,12 @@ class NullArchive:
         return None
 
 
-class TODOArchive:
+class DTSysmonTapMessageArchive:
 
     def decode_archive(archive):
-        return "!!! TODO !!!"
+        data = {"$class": "DTSysmonTapMessage"}
+        data.update(archive.decode('DTTapMessagePlist'))
+        return data
 
 
 class ErrorArchive:
@@ -278,7 +280,6 @@ class Unarchive:
             return obj
 
         raw_obj = self.objects[index]
-        # print(raw_obj)
         # put a temp object in place, in case we have a circular
         # reference, which we do not really support
         self.unpacked_uids[index] = CycleToken
@@ -292,7 +293,8 @@ class Unarchive:
         if not isinstance(class_uid, uid):
             raise MissingClassUID(raw_obj)
 
-        klass = self.class_for_uid(class_uid)
+        klass = self.class_for_uid(class_uid)                         
+
         obj = klass.decode_archive(ArchivedObject(raw_obj, self))
 
         self.unpacked_uids[index] = obj
@@ -491,7 +493,7 @@ UNARCHIVE_CLASS_MAP = {
     'NSError': ErrorArchive,
     'NSException': ExceptionArchive,
     'NSMutableString': MutableStringArchive,
-    'DTSysmonTapMessage': TODOArchive,
+    'DTSysmonTapMessage': DTSysmonTapMessageArchive,
     'NSMutableData': MutableDataArchive,
 }
 

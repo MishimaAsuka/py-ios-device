@@ -96,7 +96,6 @@ class DTXClientMixin:
                 if self._dtx_demux_manager[key].completed:
                     ret = self._dtx_demux_manager[key].message
                     self._dtx_demux_manager.pop(key)
-                    print(ret)
                     return ret
 
     def _setup_manager(self):

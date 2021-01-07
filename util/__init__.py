@@ -15,11 +15,3 @@ def read_file(filename):
     data = f.read()
     f.close()
     return data
-
-
-if gettrace():
-    logging.basicConfig(format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s',
-                        level=logging.DEBUG)
-else:
-    logging.basicConfig(format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s',
-                        level=logging.INFO)

@@ -145,9 +145,14 @@ class USBMux:
             if self.devices:
                 if serial:
                     for device in self.devices:
-                        if device.serial == serial:
-                            _dev = device
-                            return device
+                        if isinstance(serial, bytes):
+                            if device.serial == serial:
+                                _dev = device
+                                return device
+                        elif isinstance(serial, str):
+                            if device.serial == serial.encode():
+                                _dev = device
+                                return device
                 else:
                     return self.devices[0]
         if serial:
